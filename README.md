@@ -29,7 +29,6 @@ Payloadility is a **payload-generation utility**, not an exploitation framework.
 * **Encoding Modes:** Plain, URL, double URL, and HTML escaping.
 * **No Third-Party Dependencies:** Uses only the Python standard library.
 * **Readable Output:** One payload per line, suitable for terminal use or shell redirection.
-* **Global Access:** Can be registered as the `payloadility` command through `/usr/local/bin`.
 
 ## 🧰 Supported Categories
 
