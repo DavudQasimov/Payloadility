@@ -14,6 +14,8 @@
 
 **Payloadility** is a lightweight, dependency-free Python CLI for generating controlled security-testing payloads. It provides one consistent interface for selecting, filtering, sampling, and encoding payloads for common web-application vulnerability classes.
 
+Full Breakdown: https://medium.com/@qasimovdavud39/payloadility-a-lightweight-payload-generator-for-authorized-security-testing-ec80d8c4999d?sharedUserId=qasimovdavud39
+
 Payloadility is a **payload-generation utility**, not an exploitation framework. It does not scan targets, send HTTP requests, execute payloads, bypass authentication, or perform brute-force activity.
 
 > Use Payloadility only against systems that you own or are explicitly authorized to test.
@@ -165,53 +167,6 @@ usage: payloadility.py [-h]
 | `double-url` | Applies URL percent-encoding twice. |
 | `html` | Escapes HTML-sensitive characters such as `<`, `>`, quotes, and `&`. |
 
-## 💡 Usage Examples
-
-```bash
-# Display help
-payloadility --help
-
-# List categories and payload counts
-payloadility --list
-
-# Print all XSS payloads
-payloadility xss
-
-# Print five random XSS payloads
-payloadility xss --count 5
-
-# Search SQL injection payloads
-payloadility sqli --search UNION
-
-# URL-encode SQL injection payloads
-payloadility sqli --encode url
-
-# Double URL-encode LFI payloads without the banner
-payloadility lfi --encode double-url --no-banner
-
-# Search and sample SSTI expressions
-payloadility ssti --search '{{' --count 10 --no-banner
-
-# Print command-injection probes
-payloadility command-injection --count 10
-
-# Search XXE file references
-payloadility xxe --search file --no-banner
-
-# Search open-redirect probes
-payloadility open-redirect --search evil --count 5
-
-# HTML-escape XSS output
-payloadility xss --encode html --no-banner
-
-# Save output to files
-payloadility xss --no-banner > xss-payloads.txt
-payloadility sqli --encode url --no-banner > sqli-url-encoded.txt
-
-# Run without global installation
-python3 payloadility.py xss --count 5
-```
-
 ## 📊 Payload Coverage
 
 Every requested category contains at least 50 payloads:
@@ -227,15 +182,6 @@ Every requested category contains at least 50 payloads:
 | Open Redirect | 55 |
 
 Counts may increase as the payload database is expanded. Payloadility only prints these strings; it does not send or execute them.
-
-## 🔍 Output Behavior
-
-By default, Payloadility prints the ASCII banner followed by one payload per line. Use `--no-banner` when piping output into another command:
-
-```bash
-payloadility xss --no-banner | head -n 10
-payloadility sqli --no-banner | grep -i union
-```
 
 ## 🧪 Recommended Authorized Workflow
 
