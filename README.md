@@ -13,7 +13,7 @@
 
 **Payloadility** is a lightweight, dependency-free Python CLI for generating controlled security-testing payloads. It provides one consistent interface for selecting, filtering, sampling, and encoding payloads for common web-application vulnerability classes.
 
-Full Breakdown: https://medium.com/@qasimovdavud39/payloadility-a-lightweight-payload-generator-for-authorized-security-testing-ec80d8c4999d?sharedUserId=qasimovdavud39
+Full Article: https://medium.com/@qasimovdavud39/payloadility-a-lightweight-payload-generator-for-authorized-security-testing-ec80d8c4999d?sharedUserId=qasimovdavud39
 
 Payloadility is a **payload-generation utility**, not an exploitation framework. It does not scan targets, send HTTP requests, execute payloads, bypass authentication, or perform brute-force activity.
 
