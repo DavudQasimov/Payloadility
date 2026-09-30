@@ -10,7 +10,6 @@
 
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-[![Platform: Linux](https://img.shields.io/badge/Platform-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](#-installation--global-setup)
 
 **Payloadility** is a lightweight, dependency-free Python CLI for generating controlled security-testing payloads. It provides one consistent interface for selecting, filtering, sampling, and encoding payloads for common web-application vulnerability classes.
 
