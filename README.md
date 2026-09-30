@@ -89,7 +89,7 @@ Open a new terminal shell, or refresh the zsh command cache:
 ```bash
 rehash 2>/dev/null || true
 payloadility --help
-payloadility --list
+payloadility 
 ```
 
 You can now run Payloadility from any directory:
